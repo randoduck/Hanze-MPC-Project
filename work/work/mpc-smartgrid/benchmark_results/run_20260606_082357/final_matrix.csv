@@ -1,0 +1,3 @@
+test_id,pi5_value,pi2_value,expected_aggregate,mode,observed_pi5,observed_pi2,pi5_protocol_ms,pi2_protocol_ms,pi5_max_rss_kb,pi2_max_rss_kb,status,notes
+T01_baseline_812,312,500,812,baseline,812,812,225.906,258.603,2624,2848,PASS,ok
+T02_baseline_838,318,520,838,baseline,838,838,235.257,310.220,2624,2848,PASS,ok

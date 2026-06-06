@@ -1,0 +1,29 @@
+TEST_ID=T10_cpu50_mem32_812
+ROLE=pi2
+NODE_ID=1
+VALUE=500
+MODE=baseline
+START_TS=2026-06-06T04:22:51+01:00
+HOSTNAME=raspberrypi
+TAILSCALE_IP=100.85.83.7
+----------------------------------------
+[mpc_runner] party 1/2 value=500 config=configs/cluster_test2.json
+[mpc_runner] Connecting...
+[comm] connected to party 0 at 100.101.20.65
+[comm] all 2 parties connected
+[mpc_runner] Connected. Running protocol.
+
+[meter] ============================
+[meter] node_id          = 1
+[meter] input_energy_wh  = 500
+[meter] Local Partial Sum= 326852803
+[meter] GLOBAL AGGREGATE = 812
+[meter] protocol_ms      = 270.667
+[meter] n_parties        = 2
+[meter] max_rss_kb       = 2720
+[meter] user_cpu_sec     = 0.010093
+[meter] sys_cpu_sec      = 0.020186
+[meter] ============================
+
+----------------------------------------
+END_TS=2026-06-06T04:22:51+01:00

@@ -1,0 +1,5 @@
+test_id,pi5_value,pi2_value,expected_aggregate,mode,observed_pi5,observed_pi2,pi5_protocol_ms,pi2_protocol_ms,pi5_max_rss_kb,pi2_max_rss_kb,status,notes
+T01_baseline_812,312,500,812,baseline,812,812,225.068,310.329,2624,2848,PASS,ok
+T02_baseline_838,318,520,838,baseline,838,838,264.458,329.800,2672,2764,PASS,ok
+T03_baseline_815,305,510,815,baseline,815,815,241.236,319.836,2672,2848,PASS,ok
+T04_cpu75_812,312,500,812,cpu75,,,,,,,FAIL,Pi5 command failed; Pi2 command failed; aggregate mismatch; 

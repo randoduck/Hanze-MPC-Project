@@ -1,0 +1,30 @@
+TEST_ID=T08_mem32_812
+ROLE=pi5
+NODE_ID=0
+VALUE=312
+MODE=mem32
+START_TS=2026-06-06T04:22:20+01:00
+HOSTNAME=raspberrypi
+TAILSCALE_IP=100.101.20.65
+----------------------------------------
+[mpc_runner] party 0/2 value=312 config=configs/cluster_test2.json
+[mpc_runner] Connecting...
+[comm] party 0 listening on port 5000
+[comm] accepted connection from party 1
+[comm] all 2 parties connected
+[mpc_runner] Connected. Running protocol.
+
+[meter] ============================
+[meter] node_id          = 0
+[meter] input_energy_wh  = 312
+[meter] Local Partial Sum= 784631134
+[meter] GLOBAL AGGREGATE = 812
+[meter] protocol_ms      = 771.406
+[meter] n_parties        = 2
+[meter] max_rss_kb       = 6768
+[meter] user_cpu_sec     = 0.010002
+[meter] sys_cpu_sec      = 0.000000
+[meter] ============================
+
+----------------------------------------
+END_TS=2026-06-06T04:22:26+01:00

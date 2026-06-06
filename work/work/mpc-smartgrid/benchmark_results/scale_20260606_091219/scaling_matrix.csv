@@ -1,0 +1,10 @@
+case_id,N,trial,placement,pi5_nodes,pi2_nodes,expected_aggregate,completed_nodes,all_match,mean_protocol_ms,max_protocol_ms,status,failure_reason
+N20_trial1,20,1,balanced,10,10,210,20,true,5767.951,8289.409,PASS,ok
+N20_trial2,20,2,balanced,10,10,210,20,true,2356.485,2935.291,PASS,ok
+N20_trial3,20,3,balanced,10,10,210,20,true,2325.949,2967.492,PASS,ok
+N24_trial1,24,1,balanced,12,12,300,24,true,3154.457,3979.516,PASS,ok
+N24_trial2,24,2,balanced,12,12,300,24,true,5347.378,6568.038,PASS,ok
+N24_trial3,24,3,balanced,12,12,300,24,true,3032.919,3823.711,PASS,ok
+N32_trial1,32,1,balanced,16,16,528,32,true,4643.170,5825.640,PASS,ok
+N32_trial2,32,2,balanced,16,16,528,32,true,4545.928,5741.590,PASS,ok
+N32_trial3,32,3,balanced,16,16,528,32,true,4201.965,5241.808,PASS,ok

@@ -1,0 +1,12 @@
+[agg] secure aggregation server
+[agg] N=1000 port=7000 expected=536600
+[agg] waiting for submissions...
+[agg] received=100/1000
+[agg] received=200/1000
+[agg] received=300/1000
+[agg] received=400/1000
+[agg] received=500/1000
+[agg] received=600/1000
+[agg] received=700/1000
+[agg] received=800/1000
+[agg] received=900/1000

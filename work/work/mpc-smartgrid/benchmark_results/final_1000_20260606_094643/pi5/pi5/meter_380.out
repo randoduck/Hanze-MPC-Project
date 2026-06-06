@@ -1,0 +1,5 @@
+[meter] ID=380
+[meter] MASKED_SUBMISSION=1001118061
+[meter] SUBMIT_MS=0.315
+[meter] MAX_RSS_KB=1072
+[meter] STATUS=PASS

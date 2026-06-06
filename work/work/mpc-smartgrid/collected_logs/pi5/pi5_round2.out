@@ -1,0 +1,19 @@
+[mpc_runner] party 0/2 value=305 config=configs/cluster_test2.json
+[mpc_runner] Connecting...
+[comm] party 0 listening on port 5000
+[comm] accepted connection from party 1
+[comm] all 2 parties connected
+[mpc_runner] Connected. Running protocol.
+
+[meter] ============================
+[meter] node_id          = 0
+[meter] input_energy_wh  = 305
+[meter] Local Partial Sum= 467815499
+[meter] GLOBAL AGGREGATE = 815
+[meter] protocol_ms      = 217.552
+[meter] n_parties        = 2
+[meter] max_rss_kb       = 1536
+[meter] user_cpu_sec     = 0.001354
+[meter] sys_cpu_sec      = 0.000000
+[meter] ============================
+

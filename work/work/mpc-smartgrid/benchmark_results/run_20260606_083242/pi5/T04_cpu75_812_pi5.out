@@ -1,0 +1,11 @@
+TEST_ID=T04_cpu75_812
+ROLE=pi5
+NODE_ID=0
+VALUE=312
+MODE=cpu75
+START_TS=2026-06-06T04:03:50+01:00
+HOSTNAME=raspberrypi
+TAILSCALE_IP=100.101.20.65
+----------------------------------------
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required

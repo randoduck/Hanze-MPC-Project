@@ -1,0 +1,30 @@
+TEST_ID=T03_baseline_815
+ROLE=pi5
+NODE_ID=0
+VALUE=305
+MODE=baseline
+START_TS=2026-06-06T04:21:16+01:00
+HOSTNAME=raspberrypi
+TAILSCALE_IP=100.101.20.65
+----------------------------------------
+[mpc_runner] party 0/2 value=305 config=configs/cluster_test2.json
+[mpc_runner] Connecting...
+[comm] party 0 listening on port 5000
+[comm] accepted connection from party 1
+[comm] all 2 parties connected
+[mpc_runner] Connected. Running protocol.
+
+[meter] ============================
+[meter] node_id          = 0
+[meter] input_energy_wh  = 305
+[meter] Local Partial Sum= 1777215982
+[meter] GLOBAL AGGREGATE = 815
+[meter] protocol_ms      = 185.905
+[meter] n_parties        = 2
+[meter] max_rss_kb       = 2624
+[meter] user_cpu_sec     = 0.000000
+[meter] sys_cpu_sec      = 0.004560
+[meter] ============================
+
+----------------------------------------
+END_TS=2026-06-06T04:21:20+01:00
