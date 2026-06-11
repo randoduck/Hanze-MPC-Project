@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Network impairment tests (Plan P2.10 / Task 8). Applies tc netem on the
+# Network impairment tests. Applies tc netem on the
 # tailscale interface and runs both the 2-party meter path and the 1000-meter
 # secure aggregation path under each condition. netem is always removed on
 # exit, even if a run fails (cleanup trap).

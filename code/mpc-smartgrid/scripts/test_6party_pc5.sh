@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Six-party regression (Plan P2.4): nodes 0,1,2 on Pi 5 and 3,4,5 on Pi 2,
+# Six-party regression: nodes 0,1,2 on Pi 5 and 3,4,5 on Pi 2,
 # secrets 10..60, expected aggregate 210. Verifies all six report 210.
 
 PI5_HOST="solomon@100.101.20.65"

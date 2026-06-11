@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Smoke test (Plan P2.1 / Task 2): the first thing to run after any code change.
+# Smoke test: the first thing to run after any code change.
 # Syncs source, rebuilds both Pis, runs make test, then a 2-party bench_mpc
 # (expect 1000) and a 2-party meter_node (expect 812).
 

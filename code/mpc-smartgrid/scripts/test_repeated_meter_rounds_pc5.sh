@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Repeated smart-meter rounds (Plan P2.3): three 2-party rounds, each run N
+# Repeated smart-meter rounds: three 2-party rounds, each run N
 # trials (default 10), to build reliability evidence for the meter path.
 #   round 0: 312 + 500 = 812
 #   round 1: 318 + 520 = 838

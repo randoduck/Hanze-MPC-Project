@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Load sweep (Plan P2.7 / Task 5): find the secure-aggregation capacity curve.
+# Load sweep: find the secure-aggregation capacity curve.
 # Runs the suite at increasing N with proportional placement, 3 trials each.
 # Stops at the first N where every trial fails (--stop-cliff) or runs all.
 

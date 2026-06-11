@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Pi 2 placement sweep (Plan P2.8 / Task 6): at fixed N=1000, vary how many
+# Pi 2 placement sweep: at fixed N=1000, vary how many
 # meters land on Pi 2 to find where repeated-run reliability collapses.
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

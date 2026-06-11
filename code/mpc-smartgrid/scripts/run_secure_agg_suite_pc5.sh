@@ -4,10 +4,9 @@ set -euo pipefail
 # General, hardened secure-aggregation runner.
 #
 # Runs one or more trials of the central secure aggregation path across Pi 5
-# and Pi 2 and writes a machine-readable CSV. Generalizes the old
-# run_final_1000 script (Plan P2.6, Task 3): server readiness check, in-server
-# timeout, batched client launch, missing-ID reporting, captured exit codes,
-# and per-run failure reasons.
+# and Pi 2 and writes a machine-readable CSV. Server readiness check,
+# in-server timeout, batched client launch, missing-ID reporting, captured
+# exit codes, and per-run failure reasons.
 #
 # Usage:
 #   ./scripts/run_secure_agg_suite_pc5.sh \

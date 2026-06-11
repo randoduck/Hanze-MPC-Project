@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Memory sweep (Plan P2.9 / Task 7): at fixed N=1000 / placement 900-100, lower
+# Memory sweep: at fixed N=1000 / placement 900-100, lower
 # the per-meter memory cap to find the minimum viable value.
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

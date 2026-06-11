@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Long-running stability test (Plan P2.11): repeats a workload on an interval
+# Long-running stability test: repeats a workload on an interval
 # for a fixed duration to surface slow leaks / flakiness needed for reliability
 # claims.
 #
