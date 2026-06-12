@@ -8,20 +8,11 @@
 #include "mpc_field.h"
 #include <stdint.h>
 
-/* ------------------------------------------------------------------ */
-/*  Platform-specific RNG                                               */
-/* ------------------------------------------------------------------ */
 
 #ifdef __linux__
 #  include <sys/random.h>   /* getrandom(2) -- Linux 3.17+ */
 #else
-/*
- * Embedded fallback: a simple LCG.
- * REPLACE this with AES-CTR seeded from ADC noise on production hardware.
- * See MPC_UseCase_Analysis.docx Section 6 (Molina-Markham constraints).
- *
- * To seed: call mpc_field_seed_rng(adc_noise_value) once at startup.
- */
+
 static uint32_t _rng_state = 0xdeadbeefUL;
 
 void mpc_field_seed_rng(uint32_t seed) { _rng_state = seed; }
@@ -33,15 +24,11 @@ static uint32_t _lcg_next(void) {
 }
 #endif
 
-/* ------------------------------------------------------------------ */
-/*  Shorthand                                                           */
-/* ------------------------------------------------------------------ */
+
 
 #define P  MPC_PRIME   /* 2147483647 -- 2^31 - 1 */
 
-/* ------------------------------------------------------------------ */
-/*  Arithmetic                                                          */
-/* ------------------------------------------------------------------ */
+
 
 field_t field_add(field_t a, field_t b) {
     /*
