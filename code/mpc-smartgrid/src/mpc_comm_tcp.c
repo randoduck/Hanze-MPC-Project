@@ -27,9 +27,6 @@
 #include <poll.h>
 #include <pthread.h>
 
-/* ------------------------------------------------------------------ */
-/*  Module state                                                        */
-/* ------------------------------------------------------------------ */
 
 static int _my_id    = -1;
 static int _n        =  0;
@@ -37,9 +34,7 @@ static int _peer_fd[MPC_MAX_PARTIES];   /* fd to talk to peer i; -1 = not connec
 
 static pthread_mutex_t _fd_mutex = PTHREAD_MUTEX_INITIALIZER;
 
-/* ------------------------------------------------------------------ */
-/*  Acceptor thread                                                     */
-/* ------------------------------------------------------------------ */
+
 
 typedef struct {
     int listen_fd;   /* already bound + listening before the thread starts */
@@ -88,9 +83,6 @@ static void *acceptor_thread(void *arg) {
     return NULL;
 }
 
-/* ------------------------------------------------------------------ */
-/*  comm_init                                                           */
-/* ------------------------------------------------------------------ */
 
 int comm_init(int my_id, int n, const char **party_ips) {
     _my_id = my_id;
@@ -188,9 +180,7 @@ int comm_init(int my_id, int n, const char **party_ips) {
     return 0;
 }
 
-/* ------------------------------------------------------------------ */
-/*  comm_send                                                           */
-/* ------------------------------------------------------------------ */
+
 
 int comm_send(int to, const void *buf, size_t len) {
     int fd = _peer_fd[to];
@@ -213,9 +203,6 @@ int comm_send(int to, const void *buf, size_t len) {
     return 0;
 }
 
-/* ------------------------------------------------------------------ */
-/*  comm_recv                                                           */
-/* ------------------------------------------------------------------ */
 
 int comm_recv(int from, void *buf, size_t len, int timeout_ms) {
     int fd = _peer_fd[from];
@@ -253,9 +240,7 @@ int comm_recv(int from, void *buf, size_t len, int timeout_ms) {
     return 0;
 }
 
-/* ------------------------------------------------------------------ */
-/*  comm_close                                                          */
-/* ------------------------------------------------------------------ */
+
 
 void comm_close(void) {
     for (int i = 0; i < _n; i++) {
