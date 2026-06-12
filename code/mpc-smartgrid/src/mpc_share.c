@@ -1,6 +1,3 @@
-/*
- * mpc_share.c  --  Additive secret sharing over Fp
- */
 
 #include "mpc_share.h"
 
