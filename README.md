@@ -6,6 +6,9 @@ compute the sum of their private values without either party seeing the other's 
 Built for Raspberry Pi (ARM Cortex-A7, Raspbian bookworm).
 Simulates the UC-1 use case from the Hanze smart meter project.
 
+Check out the Simulation on our Website: https://mpc-smart-grid.vercel.app?v=1
+
+
 ---
 
 ## What it does
